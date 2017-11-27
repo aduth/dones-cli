@@ -1,6 +1,6 @@
 # Dones CLI
 
-Dones CLI is an integration for the [Dones application](https://github.com/aduth/dones), enabling you to record Dones tasks straight from your terminal.
+Dones CLI is an integration for the [Dones application](https://dones.today), enabling you to record Dones tasks straight from your terminal.
 
 ## Installation
 
