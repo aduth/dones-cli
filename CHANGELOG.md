@@ -1,4 +1,4 @@
-**1.1.0 (---)**
+**1.1.0 (2017-11-27)**
 
 - New: Add support for `--goal` flag to mark incomplete tasks
 
