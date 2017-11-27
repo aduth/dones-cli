@@ -1,0 +1,14 @@
+{
+	"root": true,
+	"extends": "wpcalypso",
+	"parser": "babel-eslint",
+	"env": {
+		"node": true
+	},
+	"rules": {
+		"arrow-parens": "error",
+		"max-len": [ "error", { "code": 120 } ],
+		"no-console": "off",
+		"no-process-exit": "off"
+	}
+}

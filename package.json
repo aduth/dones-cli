@@ -1,0 +1,43 @@
+{
+  "name": "dones",
+  "version": "1.0.0",
+  "description": "Record Dones tasks from your terminal",
+  "author": {
+    "name": "Andrew Duthie",
+    "email": "andrew@andrewduthie.com",
+    "url": "https://andrewduthie.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aduth/dones-cli.git"
+  },
+  "license": "MIT",
+  "bin": {
+    "dones": "./cli.js"
+  },
+  "scripts": {
+    "lint": "eslint ."
+  },
+  "files": [
+    "cli.js",
+    "config.js",
+    "constant.js",
+    "record.js",
+    "setup.js"
+  ],
+  "dependencies": {
+    "commander": "^2.12.1",
+    "keytar": "^4.0.5",
+    "lodash": "^4.17.4",
+    "mz": "^2.7.0",
+    "ora": "^1.3.0",
+    "superagent": "^3.8.1",
+    "url-parse-lax": "^3.0.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.0.2",
+    "eslint": "^4.12.0",
+    "eslint-config-wpcalypso": "^1.2.0",
+    "eslint-plugin-wpcalypso": "^4.0.1"
+  }
+}
