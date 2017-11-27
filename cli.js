@@ -11,6 +11,7 @@ const setup = require( './setup' );
 
 program
 	.option( '--setup', 'Configure Dones site and account details' )
+	.option( '--goal', 'Track task as a goal' )
 	.option( '--date <date>', 'Assign done task to a specific date (YYYY-MM-DD)' )
 	.arguments( '<task>', 'Text of the task to record' )
 	.parse( process.argv );
@@ -38,6 +39,7 @@ if ( program.setup ) {
 
 	record( text, {
 		date: program.date,
+		goal: program.goal,
 		onRequestStart: () => spinner.start(),
 	} )
 		.then( () => console.log( 'Saved.' ) )

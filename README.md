@@ -26,19 +26,39 @@ dones "Completed #projectx"
 
 On the first run, you will be prompted to enter details about your Dones website instance and credentials.
 
-Optionally specify a date for the completed task with the `--date` flag:
+**Options:**
+
+`--date`
+
+Specify a date for the completed task.
 
 ```
-dones "Complete the Flux capacitor #greatscott" --date 1985-07-03
+dones "Complete the flux capacitor #timetravel" --date 1985-07-03
 ```
 
-If you need to reconfigure Dones CLI, use the `--setup` flag:
+`--goal`
+
+Mark task as an incomplete goal for the day.
+
+```
+dones "Finish documentation" --goal
+```
+
+`--setup`
+
+Re-run the Dones CLI configuration process.
 
 ```
 dones --setup
 ```
 
-Enter `dones --help` to repeat these instructions.
+`--help`
+
+Display help instructions and example usage.
+
+```
+dones --help
+```
 
 ## License
 

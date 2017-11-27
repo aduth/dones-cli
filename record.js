@@ -25,7 +25,7 @@ const isValidDate = ( date ) => /^\d{4}-\d{2}-\d{2}$/.test( date );
  * @return {Promise}         Promise resolving when done request completes
  */
 function record( text, options = {} ) {
-	const { onRequestStart = noop, date } = options;
+	const { onRequestStart = noop, date, goal } = options;
 
 	return getConfig().catch( () => {
 		// Inability to read account configuration indicates first-run
@@ -38,11 +38,12 @@ function record( text, options = {} ) {
 		// Allow client behavior in response to request starting
 		onRequestStart();
 
-		// Construct payload with text and date, if specified
-		const payload = { text };
-		if ( isValidDate( date ) ) {
-			payload.date = date;
-		}
+		// Construct payload
+		const payload = {
+			text,
+			date: isValidDate( date ) ? date : null,
+			done: ! goal,
+		};
 
 		return request
 			.post( url )
