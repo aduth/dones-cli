@@ -27,6 +27,7 @@
   ],
   "dependencies": {
     "commander": "^2.12.1",
+    "inquirer": "^4.0.0",
     "keytar": "^4.0.5",
     "lodash": "^4.17.4",
     "mz": "^2.7.0",
